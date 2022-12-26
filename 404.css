@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: radial-gradient(rgb(247, 246, 244),#4d4b42);
+}
+.container{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28, 100, 255);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+.container .content{
+    max-width: 600px;
+    text-align: center;
+}
+.container .content h2{
+    font-size: 180;
+    color: rgb(233, 214, 214);
+    line-height: 1;
+}
+
+.container .content h4{
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgb(245, 220, 220);   
+}
+.container .content p{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+.container .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #230d86;
+    color: beige;
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 25px;
+    
+}
+.container .content a:hover{
+    background: rgb(0, 0, 0);
+    animation:mymove 0.8s linear;
+}
+.container .content a:active {
+    background-color: #000000;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
