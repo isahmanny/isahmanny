@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.box .card:hover{
+    background-color: #6c757d;
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+.card i{
+    margin: 20px;
+    color: rgb(111, 0, 255);
+    font-size: xx-large;
+}
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.card p{
+    color:#6c757d;
+    text-align: center;
+}
+.card:hover i,
+.card:hover p{
+    color:#fff;
+}
+.card:hover h2{
+    font-weight: 600;
+}
+.card:nth-child(1):hover{
+    background:linear-gradient(45 deg, 
+                              rgba(12, 45, 230, 0.904) 0%,
+                              rgba(26, 2, 241, 0.911) 100%),
+                              url('CARS\Hyundai\martin-katler-ojet5e6Fzcc-unsplash.jpg');
+    background-size: contain;
+
+}
+.card:nth-child(2):hover{
+    background:linear-gradient(45 deg, 
+                              rgba(12, 45, 230, 0.904) 0%,
+                              rgba(26, 2, 241, 0.911) 100%),
+                              url('CARS\Hyundai\martin-katler-ojet5e6Fzcc-unsplash.jpg');
+    background-size: cover;
+
+}
+.card:nth-child(3n - 2):hover{
+    background:linear-gradient(45 deg, 
+                              rgba(12, 45, 230, 0.904) 0%,
+                              rgba(26, 2, 241, 0.911) 100%),
+                              url('CARS\Hyundai\martin-katler-ojet5e6Fzcc-unsplash.jpg');
+    background-size: cover;
+
+}
+.card:nth-child(4):hover{
+    background:linear-gradient(45 deg, 
+                              rgba(12, 45, 230, 0.904) 0%,
+                              rgba(26, 2, 241, 0.911) 100%),
+                              url('CARS\Hyundai\martin-katler-ojet5e6Fzcc-unsplash.jpg');
+    background-size: cover;
+
+}
+.card:nth-child(5):hover{
+    background:linear-gradient(45 deg, 
+                              rgba(12, 45, 230, 0.904) 0%,
+                              rgba(26, 2, 241, 0.911) 100%),
+                              url('CARS\Hyundai\martin-katler-ojet5e6Fzcc-unsplash.jpg');
+    background-size: cover;
+
+}
+.card:nth-child(6):hover{
+    background:linear-gradient(45 deg, 
+                              rgba(12, 45, 230, 0.904) 0%,
+                              rgba(26, 2, 241, 0.911) 100%),
+                              url('CARS\Hyundai\martin-katler-ojet5e6Fzcc-unsplash.jpg');
+    background-size: cover;
+
+}

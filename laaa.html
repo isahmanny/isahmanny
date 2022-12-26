@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muizcars</title>
+    <link rel="stylesheet" href="lol.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class='bx bx-menu' id="btn" ></i>
+        <i class='bx bx-x-circle' id="cancel"></i>
+    </label>
+    <div class="sidemenu">
+        <header>Menu</header>
+        <ul>   
+            <li><a href="html.html"><i class='bx bx-qr' ></i>Dashboard</a></li>
+            <li><a href="404.html"><i class='bx bxs-network-chart'></i>Shortcuts</a></li>
+            <li><a href="404.html"><i class='bx bx-bar-chart-square'></i>Overview</a></li>
+            <li><a href="ourservices.html"><i class='bx bx-cog'></i>Services</a></li>
+            <li><a href="contactus.html"><i class='bx bx-envelope' ></i>Contacts</a></li>
+            <li><a href="404.html"><i class='bx bxs-calendar' ></i>Events</a></li>
+            <li><a href="aboutus.html"><i class='bx bx-info-circle'></i>About</a></li>
+        </ul>
+    </div>
+    <section>
+        
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="cars/video_image.png" width="125px" alt="logo">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li style="margin-right: 50px;"><a href="#">Home</a></li>
+                            <li><a href="#">CARS<i class="fa fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="#">New</a></li>
+                                    <li><a href="#">Used</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">GARAGE<i class="fa fa-caret-down"></i></a>
+                            <ul>
+                                <li><a href="#">Benz</a></li>
+                                <li><a href="#">Toyota</a></li>
+                                <li><a href="#">Hyundai</a></li>
+                                <li><a href="#">BMW</a></li>
+                                <li><a href="#">More...</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li><a href="contactus.html">Contacts</a></li>
+                            <li><i class='bx bx-cart'></i></li>
+                        </ul>
+                    </nav>
+                </div>
+</div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="ourservices.html">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="404.html">E-Commerce</a></li>
+                            <li><a href="contactus.html">Contact US</a></li>
+                        </ul>
+                    </div>                
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Other Shops</h4>
+                        <ul>
+                            <li><a href="#">Clothes Stores</a></li>
+                            <li><a href="#">Jewelry Stores</a></li>
+                            <li><a href="#">Phones and Gadgets</a></li>
+                            <li><a href="#">Developers Team</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                          <a href="https://www.facebook.com/"><i><img src="cars/fb.png" width="30" height="30"></i></a>
+                          <a href="https://www.snapchat.com/"><i><img src="CARS/sp.png" width="30" height="30"></i></a>
+                          <a href="https://www.instagram.com/muizcars/"><i><img src="cars/ig.png" width="30" height="30"></i></a>
+                          <a href="https://www.twitter.com/"><i><img src="cars/twitter.png" width="30" height="30"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                    <!---<p class="copyrright">Copyright 2021 IsahDesigns</p>--->
+            </div>
+    </div>
+    <!-------js for menu-------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+    
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+              {
+                  MenuItems.style.maxHeight = "200px"
+              }
+            else
+              {
+                  MenuItems.style.maxHeight = "0px"
+              }
+    
+        }
+    </script>
+    </section>
+</body>

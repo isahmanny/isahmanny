@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: "Quicksand", sans-serif;
+    background: linear-gradient(rgba(255, 215, 107, 0.952), white);
+    color: rgb(0, 0, 0);
+}
+
+.sidemenu{
+    position:fixed;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background:rgb(4, 1, 20);
+    transition: .5s;
+}
+.sidemenu header{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 70px;
+    background: rgb(4, 1, 20);
+    user-select: none;
+}
+.sidemenu ul{
+    list-style-type: none;
+}
+.sidemenu ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: none;
+    color: rgb(255, 255, 255);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 70px;
+}
+.sidemenu ul i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+label #btn{
+    position: fixed;
+    right: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: #555;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    position: fixed;
+    z-index: 111;
+    right: -195px;
+    top: 17;
+    font-size: 30px;
+    color: #e94319;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+#check:checked ~ .sidemenu{
+    right: 0;
+}
+#check:checked ~ label #btn{
+    right: -250px; 
+    opacity: #555;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    right: 195px;
+
+}#check:checked ~ section{
+    margin-right: 250px;
+} 
+section{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+.faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 1.8rem;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+
+}
+
+.faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active i{
+    transform: rotate(180deg);
+}
+
+i{
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
