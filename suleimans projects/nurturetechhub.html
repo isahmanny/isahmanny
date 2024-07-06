@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer's Log</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        /* Add some basic styling to make it look decent*/
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+        }
+        .header-container{
+            background-color: #ffffff;
+            padding: none;
+            display: flex;s
+            align-items: center;
+            justify-content: space-between;
+            height: 100px;
+            padding-left: 40px;
+        }
+        .logo-section{
+            width: 50px;
+            height: 20px;
+            background-color: #fff;
+            /*border: 1px solid #ddd;*/
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+        }
+        .logo{
+            width: 150px;
+            height: 50px;
+        }
+        .nav-links{
+            display: flex;
+            align-items: center;
+        }
+        .nav-link{
+            margin-right: 100px;
+            text-decoration: none;
+            color: #33b771;
+        }
+        .nav-link:hover{
+            color: #092314;
+        }
+        .header-actions{
+            display: flex;
+            align-items: center;
+        }
+        .notification-icon{
+            font-size: 24px;
+            color: #666;
+            margin-right: 10px;
+        }
+        .profile-picture{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        .profile-picture img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .post-job-button{
+            background-color: #06381d;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .post-job-button:hover{
+            background-color: #092314;
+        }
+        .subheader{
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .log-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+.log-section {
+    margin: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+        }
+
+.log-section:hover {
+    border-bottom: 2px solid green;
+       }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo-section">
+            <img src="logo1.jpg" alt="Company Logo" class="logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Companies</a>
+        </nav>
+        <div class="header-actions">
+            <i class="fas fa-bell notification-icon"></i>
+            <div class="profile-picture">
+                <img src="Random_female_face_1.jpeg" alt="Profile Picture">
+            </div>
+            <button class="post-job-button">Post a Job</button>
+        </div>
+    </header>
+    <!-- Rest of the log content will go here -->
+    <div class="subheader">
+        <div class="log-container">
+             <div class="log-section applied-jobs-section">
+        Applied Jobs
+        <!-- Applied jobs content here -->
+    </div>
+    <div class="log-section posted-jobs-section">
+        Posted Jobs
+        <!-- Posted jobs content here -->
+    </div>
+    <div class="log-section interviews-section">
+        Interviews
+        <!-- Interviews content here -->
+    </div>
+    <div class="log-section archived-section">
+        Archived
+        <!-- Archived content here -->
+    </div></div>
+    
+</div>
+     
+</body>
+</html>
